@@ -207,123 +207,155 @@ h2 {
 .btn-primary:hover {
   background-color: #6294f1;
 }
+.navbar-nav {
+  display: none;
+}
 
- @media (max-width: 767px) {
-      /* Adjust the navbar */
-      .navbar {
-        padding: 10px;
-        text-align: center;
-      }
+/* Show the navbar toggler */
+.navbar-toggler {
+  display: block;
+  cursor: pointer;
+}
 
-      .navbar-nav > li {
-        float: none;
-        margin-bottom: 10px;
-      }
+/* When the navbar toggler is clicked, show the navbar menu items */
+.navbar-toggler:checked + .navbar-collapse {
+  display: block;
+}
 
-      /* Adjust intro section */
-      .intro {
-        margin: 10px;
-        padding: 10px;
-      }
+/* Media query for larger screens to ensure the navbar is always visible */
+@media (min-width: 768px) {
+  .navbar-nav {
+    display: flex !important;
+  }
 
-      /* Adjust line section */
-      .line {
-        margin: 10px;
-        padding: 5px;
-      }
+  .navbar-toggler {
+    display: none;
+  }
 
-      /* Adjust jobs section */
-      .jobs {
-        margin: 10px;
-        padding: 10px;
-      }
+  .navbar-collapse {
+    display: flex !important;
+  }
+}
 
-      /* Adjust time display section */
-      .timedisp {
-        margin: 10px;
-        padding: 5px;
-      }
+/* Media queries for responsiveness */
+@media (max-width: 767px) {
+  /* Adjust the navbar */
+  .navbar {
+    padding: 10px;
+    text-align: center;
+  }
 
-      /* Adjust tables */
-      .table {
-        margin: 10px;
-      }
+  .navbar-nav > li {
+    float: none;
+    margin-bottom: 10px;
+  }
 
-      .table-responsive {
-        margin: 10px;
-        overflow-x: auto;
-      }
+  /* Ensure content is below navbar */
+  .container, .intro, .line, .jobs, .timedisp, .table-responsive, .question, .result, .navigation, .bodystyl, .candidate-details, .job-details {
+    margin-top: 70px; /* Adjust this value if necessary */
+  }
 
-      /* Adjust containers */
-      .container {
-        margin: 10px;
-        padding: 10px;
-      }
+  /* Adjust intro section */
+  .intro {
+    margin: 10px;
+    padding: 10px;
+  }
 
-      /* Adjust question section */
-      .question {
-        padding: 10px;
-      }
+  /* Adjust line section */
+  .line {
+    margin: 10px;
+    padding: 5px;
+  }
 
-      /* Adjust result section */
-      .result {
-        padding: 10px;
-      }
+  /* Adjust jobs section */
+  .jobs {
+    margin: 10px;
+    padding: 10px;
+  }
 
-      /* Adjust navigation buttons */
-      .navigation {
-        text-align: center;
-      }
+  /* Adjust time display section */
+  .timedisp {
+    margin: 10px;
+    padding: 5px;
+  }
 
-      .navigation button {
-        padding: 10px 20px;
-        width: 100%;
-        margin: 5px 0;
-      }
+  /* Adjust tables */
+  .table {
+    margin: 10px;
+  }
 
-      /* Adjust candidate details */
-      .candidate-details {
-        padding: 10px;
-      }
+  .table-responsive {
+    margin: 10px;
+    overflow-x: auto;
+  }
 
-      /* Adjust body style */
-      .bodystyl {
-        padding: 20px;
-      }
+  /* Adjust containers */
+  .container {
+    margin: 10px;
+    padding: 10px;
+  }
 
-      /* Adjust job details */
-      .job-details {
-        padding: 10px;
-      }
+  /* Adjust question section */
+  .question {
+    padding: 10px;
+  }
 
-      /* Adjust primary buttons */
-      .btn-primary {
-        padding: 8px;
-        font-size: 12px;
-        width: 100%;
-        box-sizing: border-box;
-      }
+  /* Adjust result section */
+  .result {
+    padding: 10px;
+  }
 
-      /* Ensure other elements are responsive */
-      .col-sm-3 {
-        width: 100%;
-        height: auto;
-      }
+  /* Adjust navigation buttons */
+  .navigation {
+    text-align: center;
+  }
 
-      h2 {
-        font-size: 1.5em;
-      }
+  .navigation button {
+    padding: 10px 20px;
+    width: 100%;
+    margin: 5px 0;
+  }
 
-      h3 {
-        font-size: 1.2em;
-      }
+  /* Adjust candidate details */
+  .candidate-details {
+    padding: 10px;
+  }
 
-      p {
-        font-size: 1em;
-      }
-    }
+  /* Adjust body style */
+  .bodystyl {
+    padding: 20px;
+  }
 
+  /* Adjust job details */
+  .job-details {
+    padding: 10px;
+  }
 
+  /* Adjust primary buttons */
+  .btn-primary {
+    padding: 8px;
+    font-size: 12px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  /* Ensure other elements are responsive */
+  .col-sm-3 {
+    width: 100%;
+    height: auto;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+
+  h3 {
+    font-size: 1.2em;
+  }
+
+  p {
+    font-size: 1em;
+  }
   .btn-primary {
     padding: 8px;
     font-size: 10px;
