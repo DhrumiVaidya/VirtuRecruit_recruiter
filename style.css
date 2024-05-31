@@ -207,3 +207,85 @@ h2 {
 .btn-primary:hover {
   background-color: #6294f1;
 }
+
+ @media (max-width: 767px) {
+        .navbar-nav > li {
+          float: none;
+          margin-bottom: 10px;
+        }
+        .jobs {
+          margin-bottom: 20px;
+        }
+        .table-responsive {
+          overflow-x: auto;
+        }
+  .intro {
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px;
+  }
+
+  .timedisp {
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px;
+    margin-top: 10px;
+  }
+
+  .line {
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 5px;
+  }
+
+  .col-sm-3 {
+    height: auto;
+  }
+
+  .jobs {
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+
+  .table-responsive {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .container {
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px;
+  }
+
+  .question {
+    padding: 10px;
+  }
+
+  .result {
+    padding: 10px;
+  }
+
+  .navigation button {
+    padding: 10px 20px;
+  }
+
+  .candidate-details {
+    padding: 10px;
+  }
+
+  .bodystyl {
+    padding: 20px;
+  }
+
+  .job-details {
+    padding: 10px;
+  }
+
+  .btn-primary {
+    padding: 8px;
+    font-size: 10px;
+  }
+}
