@@ -17,9 +17,9 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     />
     <link rel="stylesheet" href="style.css" />
-<!--     <style>
-/*       .profile-icon-container {
-        display: inline-block; 
+    <style>
+      .profile-icon-container {
+        display: inline-block;
         width: 100px;
         height: 100px;
         background-color: #f2f2f2;
@@ -30,13 +30,16 @@
       .profile-icon {
         font-size: 48px;
         color: #333;
-      } */
+      }
+      .profile-icon h2 {
+        font-size: 12px;
+      }
       img {
         height: 151px;
         width: 151px;
         border-radius: 25px;
       }
-    </style> -->
+    </style>
   </head>
   <body>
     <nav class="navbar navbar-fixed-top">
@@ -57,26 +60,28 @@
       </div>
     </nav>
 
-    <div class="container" style="padding-top:80px">
+    <div class="container" style="padding-top: 80px">
       <div class="row">
         <div class="col-sm-12 text-center">
           <h2>Recruiter Profile</h2>
         </div>
       </div>
-     
+      <div class="col-sm-4 text-center">
+        <!-- Profile Icon -->
+        <div class="profile-icon-container">
+          <i class="fa-solid fa-user profile-icon"></i>
+          <h5>Company Logo</h5>
+        </div>
+      </div>
       <div class="col-sm-4 text-center"></div>
       <div class="col-sm-2"></div>
       <div class="row">
         <div class="col-sm-6">
           <div class="profile-details">
-          <i class="fa-solid fa-user profile-icon">Company logo </i>
-          
-    
-            <h2>Shivani Katateliya</h2>
+            <h3>Shivani Katateliya</h3>
             <p><strong>Position:</strong> Hiring Manager</p>
             <p><strong>Company:</strong> InfoChip</p>
             <p><strong>Experience:</strong> Since 2016</p>
-                </div>
             <a href="edit_profile.html">
               <button
                 class="btn btn-primary"
